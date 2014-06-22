@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".About" >
+
+    <com.redeyesstudio.dota2guide.RomulTextView
+        android:id="@+id/romulTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/romultext_view_height"
+        android:text="@string/title_activity_about"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="@dimen/romultext_view_size" />
+
+    <com.redeyesstudio.dota2guide.RomulTextView
+        android:id="@+id/choiseLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/romultext_view_height"
+        android:text="@string/youlanguage"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff1c25"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="@dimen/romultext_view_size" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.redeyesstudio.dota2guide.RomulTextView
+            android:layout_width="@dimen/romultext_view_info_width"
+            android:layout_height="@dimen/romultext_view_height"
+            android:background="#ff1c25"
+            android:gravity="center"
+            android:text="@string/createtitle"
+            android:textColor="#fff"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/romultext_view_size" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/romultext_view_height"
+            android:padding="1dp"
+            android:background="#f00"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/studioName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/redeyesstudio"
+                android:background="#1a1a1a"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="@dimen/accordfontsize" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.redeyesstudio.dota2guide.RomulTextView
+            android:id="@+id/romulTextView3"
+            android:layout_width="@dimen/romultext_view_info_width"
+            android:layout_height="@dimen/romultext_view_height"
+            android:background="#ff1c25"
+            android:gravity="center"
+            android:text="@string/contactstitle"
+            android:textColor="#fff"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/romultext_view_size" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/romultext_view_height"
+            android:padding="1dp"
+            android:background="#f00"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/studioEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/emailstudio"
+                android:background="#1a1a1a"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="@dimen/accordfontsize" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#f00" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/abouttext"
+            android:background="#1a1a1a"
+            android:gravity="center_horizontal"
+            android:textColor="#fff"
+            android:padding="3dp"
+            android:textSize="@dimen/accordfontsize" />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

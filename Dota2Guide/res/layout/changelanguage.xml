@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/langFlagImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hourglass"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.3" />
+
+    <TextView
+        android:id="@+id/langName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Language"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|top"
+        android:layout_weight="0.7"
+        android:textSize="25dp" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <com.redeyesstudio.dota2guide.Accordion
+       xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+       android:id="@+id/accordheroabout"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       customNS:iconaccordion="R.drawable.iconabouthero"
+       customNS:titleaccordion="R.string.heroabout"
+       android:visibility="gone"
+       android:layout_marginTop="5dp" />
+
+    <com.redeyesstudio.dota2guide.Accordion
+       xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+       android:id="@+id/accordherohowtoplay"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       customNS:iconaccordion="R.drawable.iconhowtoplay"
+       customNS:titleaccordion="R.string.herohowtoplay"
+       android:visibility="gone"
+       android:layout_marginTop="5dp" />
+
+    <com.redeyesstudio.dota2guide.Accordion
+       xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+       android:id="@+id/accordheroadvice"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       customNS:iconaccordion="R.drawable.iconitems"
+       customNS:titleaccordion="R.string.heroadvice"
+       android:visibility="gone"
+       android:layout_marginTop="5dp" />
+
+    <com.redeyesstudio.dota2guide.Accordion
+       xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+       android:id="@+id/accordheroitems"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       customNS:iconaccordion="R.drawable.iconadvice"
+       customNS:titleaccordion="R.string.herouseditems"
+       android:layout_marginTop="5dp"/>
+
+    <com.redeyesstudio.dota2guide.Accordion
+       xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+       android:id="@+id/accordherofacts"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       customNS:iconaccordion="R.drawable.iconfacts"
+       customNS:titleaccordion="R.string.herofacts"
+       android:visibility="gone"
+       android:layout_marginTop="5dp" />
+
+    <com.redeyesstudio.dota2guide.Accordion
+       xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+       android:id="@+id/accordheropage"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       customNS:iconaccordion="R.drawable.iconfacts"
+       customNS:titleaccordion="R.string.heroadvice"
+       android:visibility="gone"
+       android:layout_marginTop="5dp" />
+
+    
+</LinearLayout>

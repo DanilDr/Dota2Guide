@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginBottom="51dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorconsumables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsrashod"
+                customNS:titleaccordion="R.string.itemsrashod" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorattributes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsattributes"
+                customNS:titleaccordion="R.string.atributes" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorarmaments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsattributes"
+                customNS:titleaccordion="R.string.armament" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorarcane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsattributes"
+                customNS:titleaccordion="R.string.mystic" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorcommon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsshared"
+                customNS:titleaccordion="R.string.shared" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorsupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsmagic"
+                customNS:titleaccordion="R.string.support" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorcaster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsmagic"
+                customNS:titleaccordion="R.string.magic" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorweapons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemswearpon"
+                customNS:titleaccordion="R.string.wearpon" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorarmor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemswearpon"
+                customNS:titleaccordion="R.string.armor" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorartifacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemsartefacts"
+                customNS:titleaccordion="R.string.artefacts" />
+
+            <ru.bravedevrus.dotaguidetactics.Accordion
+                xmlns:customNS="http://schemas.android.com/apk/res/ru.bravedevrus.dotaguidetactics"
+                android:id="@+id/accorsecret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                customNS:iconaccordion="R.drawable.iconitemssecrets"
+                customNS:titleaccordion="R.string.secretmarket" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/mmediaad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/black">
+    </LinearLayout>
+</FrameLayout>

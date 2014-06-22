@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/heroBioLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/bioHeroName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/heroname"
+        android:textColor="#fff"
+        android:textSize="26dp" />
+
+    <RelativeLayout
+        android:id="@+id/wrapBigImageHeroes"
+        android:layout_width="272dp"
+        android:layout_height="205dp"
+        android:layout_margin="3dp"
+        android:layout_gravity="center_vertical|center_horizontal" >
+
+        <ImageView
+            android:id="@+id/bioHeroBigImages"
+            android:layout_width="270dp"
+            android:layout_height="205dp"
+            android:padding="1dp"
+            android:background="#f00"
+            android:src="@drawable/earthshaker_theme" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bioHeroStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:text="@string/herostatus"
+        android:textColor="#fff"
+        android:textSize="@dimen/accordfontsize" />
+
+    <TextView
+        android:id="@+id/bioHeroDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:padding="3dp"
+        android:text="@string/herodescription"
+        android:textColor="#fff"
+        android:textSize="@dimen/accordfontsize" />
+
+</LinearLayout>

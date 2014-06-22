@@ -1,0 +1,63 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:background="#000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:gravity="center" >
+
+        <ru.bravedevrus.dotaguidetactics.ChangeLangButton
+            android:id="@+id/changeLangEng"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            custom:image="@drawable/langenus"
+            custom:titlename="@string/langenus"
+            custom:localename="en_US" />
+
+        <ru.bravedevrus.dotaguidetactics.ChangeLangButton
+            android:id="@+id/changeLangRus"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            custom:image="@drawable/langruru"
+            custom:titlename="@string/langruru"
+            custom:localename="ru_RU" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5"
+        android:gravity="center" >
+
+        <ru.bravedevrus.dotaguidetactics.ChangeLangButton
+            android:id="@+id/changeLangSpa"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            custom:image="@drawable/langeses"
+            custom:titlename="@string/langeses"
+            custom:localename="es_ES" />
+
+        <ru.bravedevrus.dotaguidetactics.ChangeLangButton
+            android:id="@+id/changeLangChi"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            custom:image="@drawable/langzhcn"
+            custom:titlename="@string/langzhcn"
+            custom:localename="zh_CN" />
+
+    </LinearLayout>
+    
+</LinearLayout>

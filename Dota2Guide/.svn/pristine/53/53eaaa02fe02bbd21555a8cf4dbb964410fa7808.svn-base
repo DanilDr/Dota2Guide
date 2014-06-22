@@ -1,0 +1,12 @@
+package ru.bravedevrus.dotaguidetactics;
+
+import android.os.Bundle;
+
+public class FunnyMenu extends FullScreenActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_funny_menu);
+	}
+}

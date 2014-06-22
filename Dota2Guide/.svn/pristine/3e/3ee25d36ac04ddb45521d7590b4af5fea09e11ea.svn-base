@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/accordShowHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#ff1c25"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/accordTopIcon"
+            android:layout_width="@dimen/accordion_image_size"
+            android:layout_height="@dimen/accordion_image_size"
+            android:layout_marginLeft="@dimen/accordion_image_margin_left"
+            android:layout_gravity="center_vertical" />
+
+        <com.redeyesstudio.dota2guide.RomulTextView
+            android:id="@+id/accordTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/romultext_view_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/accordMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-1dp"
+        android:background="#ff1c25"
+        android:padding="1dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/accordMainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a1a1a"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/accordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/accordfontsize" />
+
+            <com.redeyesstudio.dota2guide.FixedGridView
+                android:id="@+id/accordGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:horizontalSpacing="2dp"
+                android:isScrollContainer="false"
+                android:numColumns="3"
+                android:padding="3dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

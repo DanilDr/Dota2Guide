@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000" >
+
+    <RelativeLayout
+        android:id="@+id/funnyPictsSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/advertisement_height"
+        android:gravity="center_vertical|center_horizontal" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mmediaad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/advertisement_height"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/black">
+    </LinearLayout>
+</FrameLayout>

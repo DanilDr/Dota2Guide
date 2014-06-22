@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="5dp"
+    tools:context=".ShowItem" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:paddingBottom="51dp" >
+
+        <com.redeyesstudio.dota2guide.Accordion
+            xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+            android:id="@+id/accorditem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            customNS:dataparam="nohide" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/mmediaad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center">
+        <com.amazon.device.ads.AdLayout
+            android:id="@+id/ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    
+
+</FrameLayout>

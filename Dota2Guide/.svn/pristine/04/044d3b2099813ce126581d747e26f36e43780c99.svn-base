@@ -1,0 +1,13 @@
+package com.redeyesstudio.dota2guide;
+
+import android.os.Bundle;
+import com.redeyesstudio.dota2guide.R;
+
+public class Like extends FullScreenActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_like);
+	}
+}

@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.redeyesstudio.dota2guide.DotaBuffInfo"
+    tools:ignore="MergeRootFrame">
+
+    <WebView
+        android:id="@+id/dotaBuffVW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/prevAcivity"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backbutton"
+        android:text="" />
+    
+    <LinearLayout
+        android:id="@+id/mmediaad"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center">
+        <!-- 156827 -->
+        <com.amazon.device.ads.AdLayout
+            android:id="@+id/ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

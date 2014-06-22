@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainMenu" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:background="#000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25"
+            android:orientation="horizontal" >
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+            	android:id="@+id/mainMenuHeroes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5" 
+                customNS:iconmm="R.drawable.heroesmm" 
+                customNS:titlemm="R.string.title_activity_heroes"
+                customNS:activity="Heroes" />
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+                customNS:iconmm="R.drawable.itemsmm"
+                customNS:titlemm="R.string.items"
+                android:id="@+id/mainMenuItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5"
+                customNS:activity="Items" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" >
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+                customNS:iconmm="R.drawable.tacticsmm"
+                customNS:titlemm="R.string.title_activity_tactics"
+                android:id="@+id/mainMenuTactics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5"
+                customNS:activity="Tactics" />
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+                customNS:iconmm="R.drawable.neutralsmm"
+                customNS:titlemm="R.string.title_activity_neutrals"
+                android:id="@+id/mainMenuNeutrals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5"
+                customNS:activity="Neutrals" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" >
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+                customNS:iconmm="R.drawable.servicesmm"
+                customNS:titlemm="R.string.services"
+                android:id="@+id/mainMenuServices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5"
+                customNS:activity="Services" />
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+                customNS:iconmm="R.drawable.mailmm"
+                customNS:titlemm="R.string.title_activity_mail"
+                android:id="@+id/mainMenuMail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5"
+                customNS:activity="Mail" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" >
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+                customNS:iconmm="R.drawable.likemm"
+                customNS:titlemm="R.string.title_activity_like"
+                android:id="@+id/mainMenuLike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5" />
+
+            <com.redeyesstudio.dota2guide.MainMenuButtons
+                xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+                customNS:iconmm="R.drawable.infomm"
+                customNS:titlemm="R.string.title_activity_info"
+                android:id="@+id/mainMenuInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="0.5"
+                customNS:activity="Info" />
+
+        </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

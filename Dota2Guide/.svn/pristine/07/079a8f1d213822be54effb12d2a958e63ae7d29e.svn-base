@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="5dp"
+    tools:context=".SteamNews" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollY="0dp" >
+
+        <ru.bravedevrus.dotaguidetactics.FixedGridView
+            android:id="@+id/gridSteamNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1" />
+    </ScrollView>
+    
+</FrameLayout>

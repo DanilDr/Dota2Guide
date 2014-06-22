@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".ReportUs" >
+
+    <com.redeyesstudio.dota2guide.RomulTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/romultext_view_height"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sendmessage"
+        android:textColor="#fff"
+        android:textSize="@dimen/romultext_view_size" />
+
+    <com.redeyesstudio.dota2guide.RomulTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/romultext_view_height"
+        android:background="#ff1c25"
+        android:gravity="center"
+        android:text="@string/sendmessagetheme"
+        android:textColor="#fff"
+        android:textSize="@dimen/romultext_view_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="1dp"
+        android:background="#f00"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/themeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a1a1a"
+            android:ems="10"
+            android:textColor="#fff" >
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <com.redeyesstudio.dota2guide.RomulTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/romultext_view_height"
+        android:layout_marginTop="10dp"
+        android:background="#ff1c25"
+        android:gravity="center"
+        android:text="@string/sendmessagetext"
+        android:textColor="#fff"
+        android:textSize="@dimen/romultext_view_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="1dp"
+        android:background="#f00"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1a1a1a"
+            android:ems="10"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <com.redeyesstudio.dota2guide.MainMenuButtons
+        xmlns:customNS="http://schemas.android.com/apk/res/com.redeyesstudio.dota2guide"
+        android:id="@+id/sendMailButton"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal" 
+	    customNS:iconmm="R.drawable.mailmm"
+        customNS:titlemm="R.string.sendmessagebut"
+        android:layout_width="wrap_content" />
+
+</LinearLayout>

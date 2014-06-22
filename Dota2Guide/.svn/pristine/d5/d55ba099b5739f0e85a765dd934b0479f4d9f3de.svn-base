@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp" >
+
+    <LinearLayout
+        android:id="@+id/heroabBlock1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f00"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/heroAbilityImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.75"
+                    android:src="@drawable/dragon_knight_breathe_fire_hp1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/heroAbilityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/accordfontsize" />
+
+                    <TextView
+                        android:id="@+id/heroAbilityDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/accordfontsize" />
+
+                    <TextView
+                        android:id="@+id/heroAbilityNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="3dp"
+                        android:text="TextView"
+                        android:textColor="#72a5ea"
+                        android:textSize="@dimen/accordfontsize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/heroAbilityAbility"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:text="TextView"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:textSize="@dimen/accordfontsize" />
+
+        <TextView
+            android:id="@+id/heroAgilityParams"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:paddingLeft="3dp"
+            android:text="TextView"
+            android:textColor="#fff"
+            android:textSize="@dimen/accordfontsize" />
+
+        <TextView
+            android:id="@+id/heroAbilityAganim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:paddingLeft="3dp"
+            android:text="TextView"
+            android:textColor="#62bd62"
+            android:textSize="@dimen/accordfontsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:paddingLeft="3dp" >
+
+            <ImageView
+                android:id="@+id/accordTopIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/mana" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/mana"
+                android:textColor="#fff"
+                android:textSize="@dimen/accordfontsize" />
+
+            <TextView
+                android:id="@+id/heroAbilityMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="@dimen/accordfontsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:paddingLeft="3dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/cooldown" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/cooldown"
+                android:textColor="#fff"
+                android:textSize="@dimen/accordfontsize" />
+
+            <TextView
+                android:id="@+id/heroAbilityCooldown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="@dimen/accordfontsize" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1c1c"
+            android:layout_weight="1" >
+
+            <com.redeyesstudio.dota2guide.RomulTextView
+                android:id="@+id/btnHeroShowSkillVideo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/romultext_view_height"
+                android:background="#ff1c25"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/showvideo"
+                android:textColor="#fff"
+                android:layout_margin="2dp"
+                android:textSize="@dimen/romultext_view_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
